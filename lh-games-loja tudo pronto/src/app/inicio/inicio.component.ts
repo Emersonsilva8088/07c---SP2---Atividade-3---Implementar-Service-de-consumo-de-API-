@@ -9,7 +9,7 @@ import { ProdutoService } from '../produto.service';
 })
 export class InicioComponent implements OnInit{
 
-  public produtos: Produto[] = [];
+  public produtos: any[] = [];
 
   constructor(private _produtoService:ProdutoService){}
 
@@ -20,17 +20,7 @@ export class InicioComponent implements OnInit{
   listarProdutos():void{
     this._produtoService.getProdutos().subscribe(
       retornaProduto =>{
-        this.produtos = retornaProduto.map(
-          item => {
-            return new Produto(
-              item.id,
-              item.produto,
-              item.descricao,
-              item.foto,
-              item.preco
-            );
-          }
-        )
+        this.produtos = retornaProduto
       }
     )
   }
