@@ -26,7 +26,6 @@ import { AtualizaProdutoComponent } from './restrito/atualiza-produto/atualiza-p
 import { CadastroProdutoComponent } from './restrito/cadastro-produto/cadastro-produto.component';
 import { ListaProdutoComponent } from './restrito/lista-produto/lista-produto.component';
 import { MenuRestritoComponent } from './restrito/menu-restrito/menu-restrito.component';
-import { DentroDoWorkspaceComponent } from './dentro-do-workspace/dentro-do-workspace.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +39,6 @@ import { DentroDoWorkspaceComponent } from './dentro-do-workspace/dentro-do-work
     CadastroProdutoComponent,
     ListaProdutoComponent,
     MenuRestritoComponent,
-    DentroDoWorkspaceComponent
   ],
   imports: [
     BrowserModule,
